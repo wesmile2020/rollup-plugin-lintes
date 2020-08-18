@@ -1,0 +1,29 @@
+{
+  "name": "rollup-plugin-lintes",
+  "version": "1.0.0",
+  "description": "a rollup plugin for lint es",
+  "main": "src/index.js",
+  "types": "typings/index.d.ts",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesmile2020/rollup-plugin-lintes.git"
+  },
+  "keywords": [
+    "rollup-plugin-eslint",
+    "tslint"
+  ],
+  "author": "lei.li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wesmile2020/rollup-plugin-lintes/issues"
+  },
+  "homepage": "https://github.com/wesmile2020/rollup-plugin-lintes#readme",
+  "peerDependencies": {
+    "eslint": "^7.7.0"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "^4.0.0",
+    "chalk": "^4.1.0"
+  }
+}
