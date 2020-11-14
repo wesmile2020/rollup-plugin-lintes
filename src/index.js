@@ -1,6 +1,7 @@
 const utils = require('@rollup/pluginutils');
 const chalk = require('chalk');
 const { ESLint } = require('eslint');
+const fs = require('fs');
 
 function red(...rest) {
     return chalk.red(...rest);
@@ -39,7 +40,7 @@ function lint(options = {}) {
         async load(id) {
             const lintIgnore = await cli.isPathIgnored(id);
 
-            if (lintIgnore || !filter(id)) {
+            if (lintIgnore || !filter(id) || !fs.existsSync(id)) {
                 return null;
             }
             try {
