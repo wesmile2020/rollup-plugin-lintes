@@ -8,7 +8,7 @@ a rollup plugin for eslint
 
 ## usage
 ```javascript
-const lint = require('rollup-plugin-lintes');
+const { lint } = require('rollup-plugin-lintes');
 
 module.exports = {
     plugins: [lint()]
