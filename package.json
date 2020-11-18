@@ -1,11 +1,12 @@
 {
   "name": "rollup-plugin-lintes",
-  "version": "1.2.0",
+  "version": "2.1.0",
   "description": "a rollup plugin for lint es",
   "main": "dist/index.js",
   "types": "typings.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "release": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",

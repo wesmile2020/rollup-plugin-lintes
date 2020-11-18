@@ -8,7 +8,7 @@ export function logError(...rest: any) {
 export function printLintMessages(messages: Linter.LintMessage[], id: string) {
     for (let i = 0; i < messages.length; i += 1) {
         const  msgArr = [
-            `${id} (${messages[i].line + 1},${messages[i].column + 1}): error`,
+            `${id} (${messages[i].line},${messages[i].column}): error`,
             `${messages[i].ruleId}: ${messages[i].message}`,
         ];
         logError(msgArr.join('\n'));
