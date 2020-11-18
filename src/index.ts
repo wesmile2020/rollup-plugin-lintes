@@ -50,8 +50,9 @@ function lint(options: Options = {}): rollup.Plugin {
             if (lintIgnore || !filter(id) || exitSet.has(id)) return null;
             
             try {
-                const result = await cli.lintText(code, { filePath: id });
-                const isHasError = printLintResult(result, id);
+                const filePath = id.split('?')[0];
+                const result = await cli.lintText(code, { filePath });
+                const isHasError = printLintResult(result, filePath);
                 if (isHasError) {
                     throw new Error('rollup-plugin-lintes: transform error');
                 }
