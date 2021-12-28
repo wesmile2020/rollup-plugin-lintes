@@ -24,12 +24,11 @@
   },
   "homepage": "https://github.com/wesmile2020/rollup-plugin-lintes#readme",
   "peerDependencies": {
-    "eslint": "^7.13.0",
+    "eslint": "^8.5.0",
     "rollup": "^2.33.2"
   },
   "dependencies": {
-    "@rollup/pluginutils": "^4.1.0",
-    "chalk": "^4.1.0"
+    "@rollup/pluginutils": "^4.1.0"
   },
   "devDependencies": {
     "@types/eslint": "^7.2.5",
