@@ -8,6 +8,7 @@
     "build": "tsc",
     "release": "npm run build && npm publish"
   },
+  "files": ["dist"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wesmile2020/rollup-plugin-lintes.git"
