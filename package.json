@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-lintes",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "a rollup plugin for lint es",
   "main": "dist/index.js",
   "types": "typings.d.ts",
