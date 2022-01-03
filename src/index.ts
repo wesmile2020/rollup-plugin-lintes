@@ -10,6 +10,7 @@ interface Options {
 }
 
 const defaultOptions: Options = {
+    include: /\.(js(x?)|ts(x?))$/,
     exclude: /node_modules/,
 };
 
