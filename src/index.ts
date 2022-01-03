@@ -10,7 +10,7 @@ interface Options {
 }
 
 const defaultOptions: Options = {
-    exclude: 'node_modules',
+    exclude: /node_modules/,
 };
 
 function lint(options: Options = {}): rollup.Plugin {
@@ -23,8 +23,9 @@ function lint(options: Options = {}): rollup.Plugin {
         name: 'rollup-plugin-lintes',
 
         async load(id) {
+            if (!filter(id) || !fs.existsSync(id)) return null;
             const lintIgnore = await cli.isPathIgnored(id);
-            if (lintIgnore || !filter(id) || !fs.existsSync(id)) return null;
+            if (lintIgnore) return null;
             try {
                 const result = await cli.lintFiles(id);
                 let isHasError = false;
