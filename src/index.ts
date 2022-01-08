@@ -39,8 +39,10 @@ function lint(options: Options = {}): rollup.Plugin {
                 if (!formatter) {
                     formatter = await cli.loadFormatter('stylish');
                 }
-                const resultText = formatter.format(result);
-                console.log(resultText);
+                const errorText = formatter.format(result);
+                if (errorText) {
+                    console.log(errorText);
+                }
                 if (isHasError && opts.failOnError) {
                     throw new Error('rollup-plugin-lintes: load error');
                 }
