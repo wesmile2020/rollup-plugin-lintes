@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-lintes",
-  "version": "2.9.0",
+  "version": "3.0.0",
   "description": "a rollup plugin for lint es",
   "main": "dist/index.js",
   "scripts": {
@@ -23,14 +23,14 @@
   },
   "homepage": "https://github.com/wesmile2020/rollup-plugin-lintes#readme",
   "peerDependencies": {
-    "eslint": "^8.5.0",
-    "rollup": "^2.33.2"
+    "eslint": "^8.0.0",
+    "rollup": "^3.0.0"
   },
   "dependencies": {
-    "@rollup/pluginutils": "^4.1.0"
+    "@rollup/pluginutils": "^5.0.1"
   },
   "devDependencies": {
-    "@types/eslint": "^7.2.5",
-    "@types/node": "^14.14.7"
+    "@types/eslint": "^8.4.6",
+    "@types/node": "^18.8.5"
   }
 }
